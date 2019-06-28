@@ -14,6 +14,22 @@ php artisan key:generate
 
 php artisan serve   Or  ( you can run dirctly from php path )
 
+## Database migration 
+
+php artisan migrate
+
+## create migration project table using make migration 
+
+php artisan make:migration create_projects_table
+
+## againe migrate new table which is we have recent created
+
+php artisan migrate
+
+
+
+
+
 
 
 

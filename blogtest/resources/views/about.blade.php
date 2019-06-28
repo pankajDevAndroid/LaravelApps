@@ -4,19 +4,21 @@
 
 @section('content')
 
-<h1>About page </h1>
+<div class="container">
 
+    <h1>About page </h1>
 
+    <p> lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum
+        lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum
+        lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum
+        lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum
+        lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum
+        lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum
+        lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum
+        lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum
+        lourium epsum lourium epsum lourium epsum
+    </p>
 
-<p> lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum
-    lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum
-    lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum
-    lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum
-    lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum
-    lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum
-    lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum
-    lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum lourium epsum
-    lourium epsum lourium epsum lourium epsum
-</p>
+</div>
 
 @endsection

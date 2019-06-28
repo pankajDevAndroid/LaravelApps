@@ -4,6 +4,10 @@
 
 @section('content')
 
-<h1>Profile page</h1>
+<div class="container">
+
+    <h1>Profile page</h1>
+
+</div>
 
 @endsection

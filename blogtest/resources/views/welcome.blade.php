@@ -6,14 +6,17 @@
 
 @section('content')
 
-<h1> {!!$foo!!}Home Page </h1>
-<h1>Home Page {{$foo}}</h1>
+<div class="container">
+    <h1>Home Page</h1>
+    <h4>Home Page {{$foo}}</h4>
 
-<ul>
+    <ul>
+        @foreach ($params as $technology)
+        <li>{{ $technology}} </li>
+        @endforeach
+    </ul>
 
-    @foreach ($params as $technology)
-    <li>{{ $technology}} </li>
-    @endforeach
-</ul>
+    <h4> {!!$foo!!}Home Page </h4>
+</div>
 
 @endsection
