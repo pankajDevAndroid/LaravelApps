@@ -22,12 +22,17 @@
 
     <!-- Boostrap  -->
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-    
 
-    
 
-    
-    
+    <style>
+        .is-complete {
+            text-decoration: line-through
+        }
+    </style>
+
+
+
+
 
 </head>
 

@@ -5,9 +5,6 @@
 
     <h1>Edit Project </h1>
 
-
-
-    <!-- <form method="POST" action="/LARAVELWORKPLACE/LaravelApps/dbmigration/public/projects/{{$project->id}}"> -->
     <form method="POST" action='{{url("projects/$project->id")}}'>
 
         @method('PATCH')
@@ -33,7 +30,6 @@
 
     <br />
 
-    <!-- <form method="POST" action="/LARAVELWORKPLACE/LaravelApps/dbmigration/public/projects/{{$project->id}}"> -->
     <form method="POST" action='{{url("projects/$project->id")}}'>
 
         @method('DELETE')

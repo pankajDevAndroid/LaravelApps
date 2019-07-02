@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Filesystem\Filesystem;
+use App\Services\Twitter;
+use App\Repositories\UserRepositoriy;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,9 +34,41 @@ use Illuminate\Support\Facades\Route;
 
 */
 
-Route::get('/', function () {
+// app()->singleton('App\Services\Twitter', function () {
+//     return new App\Services\Twitter('sdfdsfdsfsfdsfds');
+// });
+
+
+
+//services & providers 
+
+// Route::get('/', function (Twitter $twitter) {
+//     // it is for provider 
+//     dd($twitter);
+
+//     // it is for only service
+//     //dd('App\Example');
+
+//     return view('welcome');
+// });
+
+
+// for interfaces here 
+// Route::get('/', function (UserRepositoriy $user) {
+
+//     dd($user);
+
+//     return view('welcome');
+// });
+
+Route::get('/', function (Twitter $twitter) {
+
+    //dd($twitter);
+
     return view('welcome');
 });
+
+
 
 Auth::routes();
 
@@ -41,19 +76,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 
-Route::resource('projects','ProjectsController');
+Route::resource('projects', 'ProjectsController');
 
-// Route::get('/projects', 'ProjectsController@index');
+Route::post('projects/{project}/tasks', 'ProjectTasksController@store');
 
-// Route::get('/projects/create', 'ProjectsController@create');
+//Route::patch('tasks/{task}', 'ProjectTasksController@update');
 
-// Route::get('/projects/{project}', 'ProjectsController@show');
+Route::post('completed-tsks/{task}', 'CompletedTasksController@store');
 
-// Route::post('/projects', 'ProjectsController@store');
-
-// Route::get('/projects/{project}/edit', 'ProjectsController@edit');
-
-// Route::patch('/projects/{project}', 'ProjectsController@update');
-
-// Route::delete('/projects/{project}', 'ProjectsController@destroy');
-
+Route::delete('completed-tsks/{task}', 'CompletedTasksController@destroy');
